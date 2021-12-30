@@ -1,1 +1,2 @@
-# Red-Team-vs-Blue-Team-Project---Pen-Testing-and-SoC-Analysis
+# RedTeam_vs_BlueTeam
+# Security Assessment, Analysis, and Hardening Project
