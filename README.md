@@ -14,4 +14,17 @@ In this activity, Red Team acts as a malicious actor attempting to gain unauthor
 
 In this environment Blue Team is defending against Red Team attacks.
 
-describem main network components then post picture of network
+describm main network components then post picture of network
+
+HETWORK_TOPOLOGY_IMAGE
+
+
+### Red Team: Securityy Assessment
+
+
+
+### Blue Team: Log Analysis and Attack Characterization
+
+
+
+### Hardening: Proposed Alarms and Mitigation Strategies
