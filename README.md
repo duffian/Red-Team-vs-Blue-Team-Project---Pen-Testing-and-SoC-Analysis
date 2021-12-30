@@ -19,7 +19,7 @@ describm main network components then post picture of network
 HETWORK_TOPOLOGY_IMAGE
 
 
-### Red Team: Securityy Assessment
+### Red Team: Security Assessment
 
 
 
