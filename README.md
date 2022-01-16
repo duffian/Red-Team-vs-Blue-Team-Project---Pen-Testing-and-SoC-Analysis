@@ -12,10 +12,9 @@ In this activity, Red Team acts as a malicious actor attempting to gain unauthor
 ### Network Topology
 
 In this environment Blue Team is defending against Red Team attacks.
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/3122a604b745c825d67c88767017092a2c29fa79/images/RvBNetworkTopology.png)
 
-describe main network components then post picture of network
 
-HETWORK_TOPOLOGY_IMAGE
 
 
 ### Red Team: Security Assessment
