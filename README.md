@@ -191,21 +191,19 @@ Data indicating the sudden spike in traffic and data indicating successful malic
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1k.png)
 
 #### 2. Find the Request for the Hidden Directory ####
+ID Traffic Requesting `/company_folders/secret_folder`
 ---
-![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2a.pnghttps://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2a.png)
+(https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2a.pnghttps://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2a.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2b.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2c.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2d.png)
-
-
-
 
 31,064 requests were made from 192.168.1.90 to the secret directory at http://192.168.1.105/company_folders/secret_folders/ roughly between December 28, 13:33:30 and December 28, 15:14:00.
 
 
 ##### Which files were requested? What information did they contain? #####
-![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2e.png)
 
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2e.png)
 Requests were made to access HTML text in ISO character set.
 
 ##### What kind of alarm would you set to detect this behavior in the future? #####
@@ -249,9 +247,7 @@ Create a baseline for what is a normal number of requests over time. Trigger an 
 Limiting the amount of login attempts per user or IP to lockout excessive traffic requests. 
 Establishing robust password practices will help limit the likelihood of successful brute force attacks.
 
-Password length and character requirements.
-
-Require updated passwords every 1-3 months depending on security needs.
+Password length, character requirements, and/or updated passwords every 1-3 months depending on security needs.
 
 #### 4. Find the WebDAV Connection ####
 ---
@@ -264,8 +260,8 @@ Require updated passwords every 1-3 months depending on security needs.
 
 ##### How many requests were made to this directory? #####
 
-20
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ef13927b37a1ca83d4082f0a3d2b27cfca4bc321/images/4g.png)
+20
 
 ##### Which file(s) were requested? ##### 
 Access to the HTML text file with an ISO character set located at http://192.168.1.105/webdav is being requested.
@@ -292,16 +288,6 @@ Create an alarm to monitor for malicious uploads.
 Maintain up-to-date anti-virus and anti-malware software. Monitor open ports (such as 22 and 80) closely for suspicious traffic. Maintain robust firewall preventing suspicious file uploads to internal network systems.
 
 
-
-
-
-
-
-
-
-
-
-
 ![image]()
 ![image]()
 ![image]()
@@ -310,24 +296,12 @@ Maintain up-to-date anti-virus and anti-malware software. Monitor open ports (su
 ![image]()
 ![image]()
 
-
-
-
-
-
-
-
-
-
-
 ![image]()
 ![image]()
 ![image]()
 ![image]()
 ![image]()
 ![image]()
-
-
 ![image]()
 ![image]()
 ![image]()
