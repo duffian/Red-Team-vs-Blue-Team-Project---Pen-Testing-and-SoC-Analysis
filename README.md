@@ -64,6 +64,7 @@ Navigate directories to ID the file containing information about the secret dire
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/browse2.png)
 
+#### Brute Force ####
 Brute force the password for the hidden directory using the ‘hydra’ command and access the secret folder 
 
 `hydra -l ashton -P /usr/share/wordlists/rockyou.txt -s 80 -f -vV 192.168.1.105 http-get “/company_folders/secret_folder/”`
@@ -72,10 +73,13 @@ Brute force the password for the hidden directory using the ‘hydra’ command 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/hydra2.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/secfolder1.png)
 
+#### Password Hash ####
 
 Break the hashed password using crackstation.net
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/crack1.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/crack2.png)
+
+#### SSH ####
 
 SSH into Ashton's account to locate flag
 `ssh ashton@192.168.1.105`
@@ -85,9 +89,7 @@ SSH into Ashton's account to locate flag
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/ssh4.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/ssh5.png)
 
-
-
-
+#### WebDAV ####
 
 Connect to the server via WebDAV
 Useername: `ryan`
@@ -95,21 +97,23 @@ Password: `linux4u`
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/webdav1.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/webdav2.png)
 
+#### Reverse Shell ####
+
 Upload a PHP reverse shell payload
 
 Create ‘shell.php’ shell script
-![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/revshell1.png)
 
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/revshell1.png)
 
 Upload payload to WebDAV system
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/revshell2.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/revshell3.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/revshell4.png)
 
-
 Execute payload that you uploaded to the site to open up a meterpreter session
 
 Setup listener
+
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/list1.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/list2.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/list3.png)
@@ -121,8 +125,7 @@ Once ‘shell.php’ shell script is uploaded to target website and is clicked o
 Meterpreter session is now open
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/meterpretersession_open.png)
 
-Acquire interactive reverse shell
-‘shell’
+Acquire interactive reverse ‘shell’
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/intrevshell.png)
 
 Find and capture flag
@@ -134,7 +137,6 @@ Exit back to meterpreter session
 
 Download ‘flag.txt’ to Kali machine
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/dwnlodflg.png)
-
 
 
 ---
