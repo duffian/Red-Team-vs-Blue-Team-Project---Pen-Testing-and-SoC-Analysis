@@ -144,25 +144,45 @@ Download ‘flag.txt’ to Kali machine
 
 ### Blue Team: Log Analysis and Attack Characterization
 ---
-#### ID Offensive Traffic ####
+#### 1. ID Offensive Traffic ####
+---
+![image]()
+![image]()
+![image]()
+![image]()
+![image]()
+![image]()
 
 ##### When did the interaction occur? #####
 
+
 Between 12:30 and 15:30 on 2021 December 8
+![image]()
+![image]()
 
 ##### What responses did the victim send back? #####
+![image]()
 
 ##### What data is concerning from the Blue Team perspective? #####
 
 Data indicating the sudden spike in traffic and data indicating successful malicious traffic connection is concerning from a Blue Team perspective.
 
-#### Find the request for the hidden directory ####
+![image]()
+
+#### 2. Find the Request for the Hidden Directory ####
+---
+![image]()
+![image]()
 
 31,064 requests were made from 192.168.1.90 to the secret directory at http://192.168.1.105/company_folders/secret_folders/ roughly between December 28, 13:33:30 and December 28, 15:14:00.
+![image]()
 
 ##### Which files were requested? What information did they contain? #####
 
 Requests were made to access HTML text in ISO character set.
+![image]()
+![image]()
+
 
 ##### What kind of alarm would you set to detect this behavior in the future? #####
 
@@ -172,19 +192,30 @@ Creating an alert to notify administrators of when three or more password login 
 
 Create a timed lockout rule to prevent IPs or specific user credentials from being used for attempted logins after the failed password threshold is reached.
 
-#### Identify the brute force attack ####
+#### 3. Identify the Brute Force Attack ####
+---
+![image]()
+![image]()
+![image]()
 
 ##### Can you identify packets specifically from Hydra? #####
+![image]()
 
 ##### How many requests were made in the brute force attack? #####
+![image]()
 
 Two brute force attacks occurred. One from 13:30 to 13:34 and another at 15:12:55 to 15:14:00. There were a combined 31,064 requests made.
+![image]()
 
 ##### How many requests had the attacker made before discovering the correct password in this one? #####
+![image]()
 
 The first attack made 16,236 before discovering the password.
+![image]()
 
 The second attack made 14,828 requests before discovering the password.
+![image]()
+![image]()
 
 ##### What kind of alarm would you set to detect this behavior in the future? ##### 
 
@@ -200,10 +231,16 @@ Password length and character requirements.
 Require updated passwords every 1-3 months depending on security needs.
 
 #### 4. Find the WebDAV Connection ####
+---
+![image]()
+![image]()
+![image]()
+![image]()
 
 ##### How many requests were made to this directory? #####
 
 20
+![image]()
 
 ##### Which file(s) were requested? ##### 
 Access to the HTML text file with an ISO character set located at http://192.168.1.105/webdav is being requested.
@@ -217,8 +254,11 @@ Create an alarm that triggers when non-approved IP addresses attempt to access W
 Monitor IPs and user credentials attempting to access WebDAV. Whitelist approved IP addresses. Reduce user access to WebDAV. Switch to HTTPS.
 
 #### 5.	Identify the Reverse Shell and Meterpreter Traffic. ####
+---
 
 ##### Identify the traffic from the meterpreter session ‘url.path: /webdav/shell.php’ #####
+![image]()
+![image]()
 
 ##### What kind of alarm would you set to detect this behavior in the future? #####
 Create an alarm to monitor for malicious uploads.
