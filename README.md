@@ -157,12 +157,11 @@ Download ‘flag.txt’ to Kali machine
 ---
 
 
-#### Log Analysis and Attack Characterization ####
 ---
 
 #### 1. ID Offensive Traffic ####
 ---
-ID Port Scans
+ID Port Scans - Filtering for `nmap` Traffic
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1a.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1b.png)
@@ -170,8 +169,6 @@ ID Port Scans
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1d.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1e.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1f.png)
-
-![image]()
 
 
 ##### When did the interaction occur? #####
