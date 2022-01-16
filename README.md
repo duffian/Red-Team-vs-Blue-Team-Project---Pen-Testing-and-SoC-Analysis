@@ -241,12 +241,12 @@ Require updated passwords every 1-3 months depending on security needs.
 ![image]()
 ![image]()
 ![image]()
-![image]()
+![image](4f)
 
 ##### How many requests were made to this directory? #####
 
 20
-![image]()
+![image](4g)
 
 ##### Which file(s) were requested? ##### 
 Access to the HTML text file with an ISO character set located at http://192.168.1.105/webdav is being requested.
