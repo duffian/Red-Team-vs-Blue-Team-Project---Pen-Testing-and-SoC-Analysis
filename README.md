@@ -256,6 +256,9 @@ Password length, character requirements, and/or updated passwords every 1-3 mont
 
 #### 4. Find the WebDAV Connection ####
 ---
+`source.ip: 192.168.1.90` `destination.ip: 192.168.1.105`
+`query:GET/webdav/`
+
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ef13927b37a1ca83d4082f0a3d2b27cfca4bc321/images/4a.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ef13927b37a1ca83d4082f0a3d2b27cfca4bc321/images/4b.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ef13927b37a1ca83d4082f0a3d2b27cfca4bc321/images/4c.png)
@@ -281,6 +284,8 @@ Monitor IPs and user credentials attempting to access WebDAV. Whitelist approved
 
 #### 5.	Identify the Reverse Shell and Meterpreter Traffic. ####
 ---
+`source.ip: 192.168.1.90` `destination.ip: 192.168.1.105`
+`query:GET/webdav/shell.php`
 
 ##### Identify the traffic from the meterpreter session ‘url.path: /webdav/shell.php’ #####
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ef13927b37a1ca83d4082f0a3d2b27cfca4bc321/images/5a.png)
@@ -294,21 +299,7 @@ Maintain up-to-date anti-virus and anti-malware software. Monitor open ports (su
 
 
 ![image]()
-![image]()
-![image]()
-![image]()
-![image]()
-![image]()
-![image]()
 
-![image]()
-![image]()
-![image]()
-![image]()
-![image]()
-![image]()
-![image]()
-![image]()
 ![image]()
 
 
