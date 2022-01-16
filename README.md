@@ -255,20 +255,19 @@ Password length and character requirements.
 
 Require updated passwords every 1-3 months depending on security needs.
 
-
-
-
 #### 4. Find the WebDAV Connection ####
 ---
-![image]()
-![image]()
-![image]()
-![image](4f)
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ef13927b37a1ca83d4082f0a3d2b27cfca4bc321/images/4a.png)
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ef13927b37a1ca83d4082f0a3d2b27cfca4bc321/images/4b.png)
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ef13927b37a1ca83d4082f0a3d2b27cfca4bc321/images/4c.png)
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ef13927b37a1ca83d4082f0a3d2b27cfca4bc321/images/4d.png)
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ef13927b37a1ca83d4082f0a3d2b27cfca4bc321/images/4e.png)
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ef13927b37a1ca83d4082f0a3d2b27cfca4bc321/images/4f.png)
 
 ##### How many requests were made to this directory? #####
 
 20
-![image](4g)
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ef13927b37a1ca83d4082f0a3d2b27cfca4bc321/images/4g.png)
 
 ##### Which file(s) were requested? ##### 
 Access to the HTML text file with an ISO character set located at http://192.168.1.105/webdav is being requested.
@@ -285,8 +284,8 @@ Monitor IPs and user credentials attempting to access WebDAV. Whitelist approved
 ---
 
 ##### Identify the traffic from the meterpreter session ‘url.path: /webdav/shell.php’ #####
-![image]()
-![image]()
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ef13927b37a1ca83d4082f0a3d2b27cfca4bc321/images/5a.png)
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ef13927b37a1ca83d4082f0a3d2b27cfca4bc321/images/5b.png)
 
 ##### What kind of alarm would you set to detect this behavior in the future? #####
 Create an alarm to monitor for malicious uploads.
@@ -305,7 +304,13 @@ Maintain up-to-date anti-virus and anti-malware software. Monitor open ports (su
 
 
 
-
+![image]()
+![image]()
+![image]()
+![image]()
+![image]()
+![image]()
+![image]()
 
 
 
