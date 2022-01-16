@@ -161,7 +161,8 @@ Download ‘flag.txt’ to Kali machine
 
 #### 1. ID Offensive Traffic ####
 ---
-ID Port Scans - Filtering for `nmap` Traffic
+`source.ip: 192.168.1.90` `destination.ip: 192.168.1.105`
+`user_agent.original:Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)`
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1a.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1b.png)
@@ -218,7 +219,7 @@ Create a timed lockout rule to prevent IPs or specific user credentials from bei
 #### 3. Identify the Brute Force Attack ####
 ---
 `source.ip: 192.168.1.90` `destination.ip: 192.168.1.105`
-`user_agent.original: Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)`
+`user_agent.original:Mozilla/4.0(Hydra)`
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/3a.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/3b.png)
