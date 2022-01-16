@@ -170,7 +170,6 @@ ID Port Scans - Filtering for `nmap` Traffic
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1e.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1f.png)
 
-
 ##### When did the interaction occur? #####
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1g.png)
@@ -191,8 +190,10 @@ Data indicating the sudden spike in traffic and data indicating successful malic
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1k.png)
 
 #### 2. Find the Request for the Hidden Directory ####
-ID Traffic Requesting `/company_folders/secret_folder`
 ---
+`source.ip: 192.168.1.90` `destination.ip: 192.168.1.105`
+`query:GET/company_folders/secret_folder`
+
 (https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2a.pnghttps://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2a.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2b.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2c.png)
@@ -216,6 +217,9 @@ Create a timed lockout rule to prevent IPs or specific user credentials from bei
 
 #### 3. Identify the Brute Force Attack ####
 ---
+`source.ip: 192.168.1.90` `destination.ip: 192.168.1.105`
+`user_agent.original: Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)`
+
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/3a.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/3b.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/3c.png)
