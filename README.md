@@ -144,30 +144,47 @@ Exit back to meterpreter session
 Download ‘flag.txt’ to Kali machine
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/dwnlodflg.png)
 
+### Vulnerabilities ###
+---
+#### 1. ####
+
+
 
 ---
 
 
 ### Blue Team: Log Analysis and Attack Characterization
 ---
+
+
+#### Log Analysis and Attack Characterization ####
+---
+
 #### 1. ID Offensive Traffic ####
 ---
+ID Port Scans
+
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1a.png)
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1b.png)
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1c.png)
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1d.png)
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1e.png)
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1f.png)
+
 ![image]()
-![image]()
-![image]()
-![image]()
-![image]()
-![image]()
+
 
 ##### When did the interaction occur? #####
 
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1g.png)
 
 Between 12:30 and 15:30 on 2021 December 8
-![image]()
-![image]()
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1h.png)
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1i.png)
 
 ##### What responses did the victim send back? #####
-![image]()
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1j.png)
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1k.png)
 
 ##### What data is concerning from the Blue Team perspective? #####
 
@@ -177,18 +194,21 @@ Data indicating the sudden spike in traffic and data indicating successful malic
 
 #### 2. Find the Request for the Hidden Directory ####
 ---
-![image]()
-![image]()
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2a.pnghttps://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2a.png)
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2b.png)
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2c.png)
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2d.png)
+
+
+
 
 31,064 requests were made from 192.168.1.90 to the secret directory at http://192.168.1.105/company_folders/secret_folders/ roughly between December 28, 13:33:30 and December 28, 15:14:00.
-![image]()
+
 
 ##### Which files were requested? What information did they contain? #####
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2e.png)
 
 Requests were made to access HTML text in ISO character set.
-![image]()
-![image]()
-
 
 ##### What kind of alarm would you set to detect this behavior in the future? #####
 
@@ -200,28 +220,27 @@ Create a timed lockout rule to prevent IPs or specific user credentials from bei
 
 #### 3. Identify the Brute Force Attack ####
 ---
-![image]()
-![image]()
-![image]()
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/3a.png)
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/3b.png)
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/3c.png)
 
 ##### Can you identify packets specifically from Hydra? #####
-![image]()
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/3d.png)
 
 ##### How many requests were made in the brute force attack? #####
-![image]()
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/3e.png)
 
 Two brute force attacks occurred. One from 13:30 to 13:34 and another at 15:12:55 to 15:14:00. There were a combined 31,064 requests made.
-![image]()
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/3f.png)
 
 ##### How many requests had the attacker made before discovering the correct password in this one? #####
-![image]()
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/3g.png)
 
 The first attack made 16,236 before discovering the password.
-![image]()
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/3h1.png)
 
 The second attack made 14,828 requests before discovering the password.
-![image]()
-![image]()
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/3i.png)
 
 ##### What kind of alarm would you set to detect this behavior in the future? ##### 
 
@@ -235,6 +254,9 @@ Establishing robust password practices will help limit the likelihood of success
 Password length and character requirements.
 
 Require updated passwords every 1-3 months depending on security needs.
+
+
+
 
 #### 4. Find the WebDAV Connection ####
 ---
@@ -295,10 +317,17 @@ Maintain up-to-date anti-virus and anti-malware software. Monitor open ports (su
 
 
 
+![image]()
+![image]()
+![image]()
+![image]()
+![image]()
+![image]()
 
 
-
-
+![image]()
+![image]()
+![image]()
 
 
 
