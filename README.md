@@ -29,14 +29,108 @@ In this environment Blue Team is defending against Red Team attacks.
 
 ### Red Team: Security Assessment
 ---
-## Exploitation ## 
+#### Exploitation #### 
 ---
 Discover target IP
 `ifconfig`
+
 `netdiscover -Pr 192.168.1.0/16`
+
 `nmap 192.168.1.90/24`
 
+![image]()
 
+#### Service and Version Scan ####
+
+
+'nmap -A --script-vuln -v 192.168.1.105`
+
+![image]()
+
+#### Navigate Webserver ####
+
+`dirb http://192.168.1.105`
+
+![image]()
+
+Access `http://192.168.1.105` via VM web browser
+
+![image]()
+
+Navigate directories to ID the file containing information about the secret directory
+
+![image]()
+
+Brute force the password for the hidden directory using the ‘hydra’ command and access the secret folder 
+
+`hydra -l ashton -P /usr/share/wordlists/rockyou.txt -s 80 -f -vV 192.168.1.105 http-get “/company_folders/secret_folder/”`
+
+![image]()
+
+Break the hashed password using crackstation.net
+![image]()
+![image]()
+
+SSH into Ashton's account to locate flag
+`ssh ashton@192.168.1.105`
+![image]()
+![image]()
+![image]()
+![image]()
+![image]()
+
+
+
+
+
+Connect to the server via WebDAV
+Useername: `ryan`
+Password: `linux4u`
+![image]()
+![image]()
+
+Upload a PHP reverse shell payload
+
+Create ‘shell.php’ shell script
+![image]()
+
+
+Upload payload to WebDAV system
+![image]()
+![image]()
+![image]()
+![image]()
+
+Execute payload that you uploaded to the site to open up a meterpreter session
+
+Setup listener
+![image]()
+![image]()
+![image]()
+
+Once ‘shell.php’ shell script is uploaded to target website and is clicked on, attacking Kali machine will connect
+![image]()
+
+Meterpreter session is now open
+![image]()
+
+Acquire interactive reverse shell
+‘shell’
+![image]()
+
+Find and capture flag
+![image]()
+![image]()
+
+Exit back to meterpreter session
+![image]()
+
+Download ‘flag.txt’ to Kali machine
+![image]()
+
+
+
+---
 
 
 ### Blue Team: Log Analysis and Attack Characterization
