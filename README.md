@@ -143,6 +143,170 @@ Download ‘flag.txt’ to Kali machine
 
 
 ### Blue Team: Log Analysis and Attack Characterization
+---
+#### ID Offensive Traffic ####
+
+##### When did the interaction occur? #####
+
+Between 12:30 and 15:30 on 2021 December 8
+
+##### What responses did the victim send back? #####
+
+##### What data is concerning from the Blue Team perspective? #####
+
+Data indicating the sudden spike in traffic and data indicating successful malicious traffic connection is concerning from a Blue Team perspective.
+
+#### Find the request for the hidden directory ####
+
+31,064 requests were made from 192.168.1.90 to the secret directory at http://192.168.1.105/company_folders/secret_folders/ roughly between December 28, 13:33:30 and December 28, 15:14:00.
+
+##### Which files were requested? What information did they contain? #####
+
+Requests were made to access HTML text in ISO character set.
+
+##### What kind of alarm would you set to detect this behavior in the future? #####
+
+Creating an alert to notify administrators of when three or more password login attempts are failed in succession.
+
+##### Identify at least one way to harden the vulnerable machine that would mitigate this attack. #####
+
+Create a timed lockout rule to prevent IPs or specific user credentials from being used for attempted logins after the failed password threshold is reached.
+
+#### Identify the brute force attack ####
+
+##### Can you identify packets specifically from Hydra? #####
+
+##### How many requests were made in the brute force attack? #####
+
+Two brute force attacks occurred. One from 13:30 to 13:34 and another at 15:12:55 to 15:14:00. There were a combined 31,064 requests made.
+
+##### How many requests had the attacker made before discovering the correct password in this one? #####
+
+The first attack made 16,236 before discovering the password.
+
+The second attack made 14,828 requests before discovering the password.
+
+##### What kind of alarm would you set to detect this behavior in the future? ##### 
+
+Create a baseline for what is a normal number of requests over time. Trigger an alert when the upper threshold of that baseline is exceeded.
+
+##### Identify at least one way to harden the vulnerable machine that would mitigate this attack. ##### 
+
+Limiting the amount of login attempts per user or IP to lockout excessive traffic requests. 
+Establishing robust password practices will help limit the likelihood of successful brute force attacks.
+
+Password length and character requirements.
+
+Require updated passwords every 1-3 months depending on security needs.
+
+#### 4. Find the WebDAV Connection ####
+
+##### How many requests were made to this directory? #####
+
+20
+
+##### Which file(s) were requested? ##### 
+Access to the HTML text file with an ISO character set located at http://192.168.1.105/webdav is being requested.
+
+##### What kind of alarm would you set to detect this behavior in the future? ##### 
+
+Create an alarm that triggers when non-approved IP addresses attempt to access WebDAV.
+
+##### Identify at least one way to harden the vulnerable machine that would mitigate this attack. ##### 
+
+Monitor IPs and user credentials attempting to access WebDAV. Whitelist approved IP addresses. Reduce user access to WebDAV. Switch to HTTPS.
+
+#### 5.	Identify the Reverse Shell and Meterpreter Traffic. ####
+
+##### Identify the traffic from the meterpreter session ‘url.path: /webdav/shell.php’ #####
+
+##### What kind of alarm would you set to detect this behavior in the future? #####
+Create an alarm to monitor for malicious uploads.
+
+##### Identify at least one way to harden the vulnerable machine that would mitigate this attack. #####
+Maintain up-to-date anti-virus and anti-malware software. Monitor open ports (such as 22 and 80) closely for suspicious traffic. Maintain robust firewall preventing suspicious file uploads to internal network systems.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
