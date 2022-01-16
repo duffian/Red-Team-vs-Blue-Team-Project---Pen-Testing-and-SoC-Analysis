@@ -1,8 +1,7 @@
 # RedTeam_vs_BlueTeam
 # Security Assessment, Analysis, and Hardening Project
 This Red Team vs. Blue Team project is organized into the following sections:
-- **Network Topology**
-  - Red Team vs. Blue Team live network environment
+- **Network Topology** Red Team vs. Blue Team live network environment
 - **Red Team** Security Assessment
 - **Blue Team** Log Analysis and Attack Characterization
 - **Hardening** Proposed Alarms and Mitigation Strategies
