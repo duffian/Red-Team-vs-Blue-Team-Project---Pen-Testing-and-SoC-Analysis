@@ -176,18 +176,19 @@ ID Port Scans - Filtering for `nmap` Traffic
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1g.png)
 
 Between 12:30 and 15:30 on 2021 December 8
+
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1h.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1i.png)
 
 ##### What responses did the victim send back? #####
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1j.png)
-![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1k.png)
+Response Codes
 
 ##### What data is concerning from the Blue Team perspective? #####
 
 Data indicating the sudden spike in traffic and data indicating successful malicious traffic connection is concerning from a Blue Team perspective.
 
-![image]()
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1k.png)
 
 #### 2. Find the Request for the Hidden Directory ####
 ---
