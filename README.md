@@ -350,9 +350,9 @@ Maintain up-to-date anti-virus and anti-malware software. Monitor open ports (su
 
 ### **Mitigation: Blocking the Port Scan** ####
 ---
-##### **Alarm** #####
++ ##### **Alarm** #####
 Create
-##### System Hardening #####
++ ##### **System Hardening** #####
 The network
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp33.png)
@@ -360,36 +360,36 @@ The network
 
 ### **Mitigation: Finding the Request for the Hidden Directory** ####
 ---
-##### **Alarm** #####
++ ##### **Alarm** #####
 Create
-##### System Hardening #####
++ ##### **System Hardening** #####
 The network
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp34.png)
 
 ### **Mitigation: Preventing Brute Force Attacks** ####
 ---
-##### **Alarm** #####
++ ##### **Alarm** #####
 Create
-##### System Hardening #####
++ ##### **System Hardening** #####
 The network
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp35.png)
 
 ### **Mitigation: Detecting the WebDAV Connection** ####
 ---
-##### **Alarm** #####
++ ##### **Alarm** #####
 Create
-##### System Hardening #####
++ ##### **System Hardening** #####
 The network
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp36.png)
 
 ### **Mitigation: Identifying Reverse Shell Upoloads** ####
 ---
-##### **Alarm** #####
++ ##### **Alarm** #####
 Create
-##### System Hardening #####
++ ##### **System Hardening** #####
 The network
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp37.png)
