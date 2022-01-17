@@ -178,9 +178,11 @@ Download ‘flag.txt’ to Kali machine
 
 ---
 
+
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp7.png)
 
-#### CWE-312: Cleartext Storage of Sensitive Information ####
+#### **CWE-312: Cleartext Storage of Sensitive Information** ####
+
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp8.png)
 
 #### CWE-522: Insufficiently Protected Credentials ####
