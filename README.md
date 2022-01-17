@@ -145,8 +145,20 @@ Download ‘flag.txt’ to Kali machine
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/dwnlodflg.png)
 
 ### Vulnerabilities ###
+
+
 ---
-#### 1. ####
+
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp7.png)
+
+#### CWE-312: Cleartext Storage of Sensitive Information ####
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp8.png)
+
+#### CWE-522: Insufficiently Protected Credentials ####
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp10.png)
+
+#### CWE-434: Unrestricted Upload of Dangerous File with Dangerous Type ####
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp16.png)
 
 
 
@@ -312,7 +324,7 @@ Create
 ##### System Hardening #####
 The network
 
-![image](pp33)
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp33.png)
 ---
 
 #### Mitigation: Finding the Request for the Hidden Directory ####
@@ -322,7 +334,7 @@ Create
 ##### System Hardening #####
 The network
 
-![image](34)
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp34.png)
 
 #### Mitigation: Preventing Brute Force Attacks ####
 ---
@@ -331,7 +343,7 @@ Create
 ##### System Hardening #####
 The network
 
-![image](35)
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp35.png)
 
 #### Mitigation: Detecting the WebDAV Connection ####
 ---
@@ -340,7 +352,7 @@ Create
 ##### System Hardening #####
 The network
 
-![image](36)
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp36.png)
 
 #### Mitigation: Identifying Reverse Shell Upoloads ####
 ---
@@ -349,4 +361,4 @@ Create
 ##### System Hardening #####
 The network
 
-![image](37)
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp37.png)
