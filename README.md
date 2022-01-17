@@ -214,7 +214,7 @@ Download ‘flag.txt’ to Kali machine
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1e.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1f.png)
 
-##### When did the interaction occur? #####
+##### **_When did the interaction occur?_** #####
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1g.png)
 
@@ -223,11 +223,11 @@ Between 12:30 and 15:30 on 2021 December 8
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1h.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1i.png)
 
-##### What responses did the victim send back? #####
+##### **_What responses did the victim send back?_** #####
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1j.png)
 Response Codes
 
-##### What data is concerning from the Blue Team perspective? #####
+##### **_What data is concerning from the Blue Team perspective?_** #####
 
 Data indicating the sudden spike in traffic and data indicating successful malicious traffic connection is concerning from a Blue Team perspective.
 
@@ -246,16 +246,16 @@ Data indicating the sudden spike in traffic and data indicating successful malic
 31,064 requests were made from 192.168.1.90 to the secret directory at http://192.168.1.105/company_folders/secret_folders/ roughly between December 28, 13:33:30 and December 28, 15:14:00.
 
 
-##### Which files were requested? What information did they contain? #####
+##### **_Which files were requested? What information did they contain?_** #####
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2e.png)
 Requests were made to access HTML text in ISO character set.
 
-##### What kind of alarm would you set to detect this behavior in the future? #####
+##### **_What kind of alarm would you set to detect this behavior in the future?_** #####
 
 Creating an alert to notify administrators of when three or more password login attempts are failed in succession.
 
-##### Identify at least one way to harden the vulnerable machine that would mitigate this attack. #####
+##### **_Identify at least one way to harden the vulnerable machine that would mitigate this attack._** #####
 
 Create a timed lockout rule to prevent IPs or specific user credentials from being used for attempted logins after the failed password threshold is reached.
 
@@ -268,16 +268,16 @@ Create a timed lockout rule to prevent IPs or specific user credentials from bei
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/3b.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/3c.png)
 
-##### Can you identify packets specifically from Hydra? #####
+##### **_Can you identify packets specifically from Hydra?_** #####
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/3d.png)
 
-##### How many requests were made in the brute force attack? #####
+##### **_How many requests were made in the brute force attack?_** #####
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/3e.png)
 
 Two brute force attacks occurred. One from 13:30 to 13:34 and another at 15:12:55 to 15:14:00. There were a combined 31,064 requests made.
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/3f.png)
 
-##### How many requests had the attacker made before discovering the correct password in this one? #####
+##### **_How many requests had the attacker made before discovering the correct password in this one?_** #####
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/3g.png)
 
 The first attack made 16,236 before discovering the password.
@@ -286,11 +286,11 @@ The first attack made 16,236 before discovering the password.
 The second attack made 14,828 requests before discovering the password.
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/3i.png)
 
-##### What kind of alarm would you set to detect this behavior in the future? ##### 
+##### **_What kind of alarm would you set to detect this behavior in the future?_** ##### 
 
 Create a baseline for what is a normal number of requests over time. Trigger an alert when the upper threshold of that baseline is exceeded.
 
-##### Identify at least one way to harden the vulnerable machine that would mitigate this attack. ##### 
+##### **_Identify at least one way to harden the vulnerable machine that would mitigate this attack._** ##### 
 
 Limiting the amount of login attempts per user or IP to lockout excessive traffic requests. 
 Establishing robust password practices will help limit the likelihood of successful brute force attacks.
@@ -309,19 +309,19 @@ Password length, character requirements, and/or updated passwords every 1-3 mont
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ef13927b37a1ca83d4082f0a3d2b27cfca4bc321/images/4e.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ef13927b37a1ca83d4082f0a3d2b27cfca4bc321/images/4f.png)
 
-##### How many requests were made to this directory? #####
+##### **_How many requests were made to this directory?_** #####
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ef13927b37a1ca83d4082f0a3d2b27cfca4bc321/images/4g.png)
 20
 
-##### Which file(s) were requested? ##### 
+##### **_Which file(s) were requested?_** ##### 
 Access to the HTML text file with an ISO character set located at http://192.168.1.105/webdav is being requested.
 
-##### What kind of alarm would you set to detect this behavior in the future? ##### 
+##### **_What kind of alarm would you set to detect this behavior in the future?_** ##### 
 
 Create an alarm that triggers when non-approved IP addresses attempt to access WebDAV.
 
-##### Identify at least one way to harden the vulnerable machine that would mitigate this attack. ##### 
+##### **_Identify at least one way to harden the vulnerable machine that would mitigate this attack._** ##### 
 
 Monitor IPs and user credentials attempting to access WebDAV. Whitelist approved IP addresses. Reduce user access to WebDAV. Switch to HTTPS.
 
@@ -330,14 +330,14 @@ Monitor IPs and user credentials attempting to access WebDAV. Whitelist approved
 `source.ip: 192.168.1.90` `destination.ip: 192.168.1.105`
 `query:GET/webdav/shell.php`
 
-##### Identify the traffic from the meterpreter session ‘url.path: /webdav/shell.php’ #####
+##### **_Identify the traffic from the meterpreter session ‘url.path: /webdav/shell.php’_** #####
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ef13927b37a1ca83d4082f0a3d2b27cfca4bc321/images/5a.png)
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ef13927b37a1ca83d4082f0a3d2b27cfca4bc321/images/5b.png)
 
-##### What kind of alarm would you set to detect this behavior in the future? #####
+##### **_What kind of alarm would you set to detect this behavior in the future?_** #####
 Create an alarm to monitor for malicious uploads.
 
-##### Identify at least one way to harden the vulnerable machine that would mitigate this attack. #####
+##### **_Identify at least one way to harden the vulnerable machine that would mitigate this attack._** #####
 Maintain up-to-date anti-virus and anti-malware software. Monitor open ports (such as 22 and 80) closely for suspicious traffic. Maintain robust firewall preventing suspicious file uploads to internal network systems.
 
 
@@ -348,7 +348,7 @@ Maintain up-to-date anti-virus and anti-malware software. Monitor open ports (su
 ---
 
 
-#### Mitigation: Blocking the Port Scan ####
+### **Mitigation: Blocking the Port Scan** ####
 ---
 ##### Alarm #####
 Create
@@ -358,7 +358,7 @@ The network
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp33.png)
 ---
 
-#### Mitigation: Finding the Request for the Hidden Directory ####
+### **Mitigation: Finding the Request for the Hidden Directory** ####
 ---
 ##### Alarm #####
 Create
@@ -367,7 +367,7 @@ The network
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp34.png)
 
-#### Mitigation: Preventing Brute Force Attacks ####
+### **Mitigation: Preventing Brute Force Attacks** ####
 ---
 ##### Alarm #####
 Create
@@ -376,7 +376,7 @@ The network
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp35.png)
 
-#### Mitigation: Detecting the WebDAV Connection ####
+### **Mitigation: Detecting the WebDAV Connection** ####
 ---
 ##### Alarm #####
 Create
@@ -385,7 +385,7 @@ The network
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp36.png)
 
-#### Mitigation: Identifying Reverse Shell Upoloads ####
+### **Mitigation: Identifying Reverse Shell Upoloads** ####
 ---
 ##### Alarm #####
 Create
