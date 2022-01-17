@@ -9,7 +9,7 @@ ___
 
 In this activity, Red Team acts as a malicious actor attempting to gain unauthorized access to a network. Blue Team monitors and analyses the activity. The ultimate objective is for Blue Team to identify vulnerabilities and to improve network security. 
 
-# Network Topology
+## Network Topology
 
 In this environment Blue Team is defending against Red Team attacks.
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/3122a604b745c825d67c88767017092a2c29fa79/images/RvBNetworkTopology.png)
@@ -27,7 +27,7 @@ In this environment Blue Team is defending against Red Team attacks.
 ---
 
 
-### Red Team: Security Assessment
+## Red Team: Security Assessment
 ---
 #### Exploitation #### 
 ---
@@ -173,7 +173,7 @@ Download ‘flag.txt’ to Kali machine
 
 
 
-### Vulnerabilities ###
+## Vulnerabilities ##
 
 
 ---
@@ -196,7 +196,7 @@ Download ‘flag.txt’ to Kali machine
 ---
 
 
-### Blue Team: Log Analysis and Attack Characterization
+## Blue Team: Log Analysis and Attack Characterization
 ---
 
 
@@ -342,7 +342,7 @@ Maintain up-to-date anti-virus and anti-malware software. Monitor open ports (su
 
 
 
-### Hardening: Proposed Alarms and Mitigation Strategies
+## Hardening: Proposed Alarms and Mitigation Strategies
 
 
 ---
