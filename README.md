@@ -185,10 +185,10 @@ Download ‘flag.txt’ to Kali machine
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp8.png)
 
-#### CWE-522: Insufficiently Protected Credentials ####
+#### **CWE-522: Insufficiently Protected Credentials** ####
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp10.png)
 
-#### CWE-434: Unrestricted Upload of Dangerous File with Dangerous Type ####
+#### **CWE-434: Unrestricted Upload of Dangerous File with Dangerous Type** ####
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp16.png)
 
 
