@@ -305,7 +305,48 @@ Maintain up-to-date anti-virus and anti-malware software. Monitor open ports (su
 ---
 
 
+#### Mitigation: Blocking the Port Scan ####
+---
+##### Alarm #####
+Create
+##### System Hardening #####
+The network
 
-![image]()
+![image](pp33)
+---
 
-![image]()
+#### Mitigation: Finding the Request for the Hidden Directory ####
+---
+##### Alarm #####
+Create
+##### System Hardening #####
+The network
+
+![image](34)
+
+#### Mitigation: Preventing Brute Force Attacks ####
+---
+##### Alarm #####
+Create
+##### System Hardening #####
+The network
+
+![image](35)
+
+#### Mitigation: Detecting the WebDAV Connection ####
+---
+##### Alarm #####
+Create
+##### System Hardening #####
+The network
+
+![image](36)
+
+#### Mitigation: Identifying Reverse Shell Upoloads ####
+---
+##### Alarm #####
+Create
+##### System Hardening #####
+The network
+
+![image](37)
