@@ -351,9 +351,12 @@ Maintain up-to-date anti-virus and anti-malware software. Monitor open ports (su
 ### **Mitigation: Blocking the Port Scan** ####
 ---
 + ##### **Alarm** #####
-Create
+Create an alert for port traffic with a threshold high enough to compensate for regular traffic. Trigger the alert if the threshold is reached, common port scanning tools, or aggressive port scanning is detected. 
+
+Have a low threshold around 10 for port scanning and an upper threshold near 100 for abnormally high traffic.
+
 + ##### **System Hardening** #####
-The network
+The network can be configured so that susceptible ports open to external traffic are outside a firewall. Whitelist authorized IPs, block unauthorized IPs, and maintain up-to-date monitoring and security software. 
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp33.png)
 ---
@@ -361,35 +364,39 @@ The network
 ### **Mitigation: Finding the Request for the Hidden Directory** ####
 ---
 + ##### **Alarm** #####
-Create
+Create a whitelist of IPs authorized to access the hidden directory. Trigger an alarm if whitelisted IPs fail 3 login attempts in quick succession. Trigger the alert if non-whitelisted IPs attempt to access the hidden directory.
+
 + ##### **System Hardening** #####
-The network
+Configure the host to timeout IP addresses the are not whitelisted and IPs that exceed the login threshold. Access to a hidden directory should be minimized as much as possible. Implement robust password practices such as character limits and frequent changes.
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp34.png)
 
 ### **Mitigation: Preventing Brute Force Attacks** ####
 ---
 + ##### **Alarm** #####
-Create
+Establish a baseline for normal frequency of traffic over time. Trigger an alarm if the upper threshold is exceeded. Threshold should  be ten failed  logins. 
+
 + ##### **System Hardening** #####
-The network
+Lockout IP addresses the fail login attempts in rapid succession. Enforce best password practices. Configure automated monitoring and logging systems to analyze large volumes of traffic and quickly identify suspicious traffic. Employ MFA.
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp35.png)
 
 ### **Mitigation: Detecting the WebDAV Connection** ####
 ---
 + ##### **Alarm** #####
-Create
+Create alarm that triggers whenever any non-whitelisted IP or traffic from unknown sources attempts to communicate with WebDAV system. Threshold is one.
 + ##### **System Hardening** #####
-The network
+Maintain all WebDAV systems inside of a firewall. Remove WebDAV systems from any direct connection to external traffic. Place a frequently-updated monitoring system and security system inbetweeen WebDAV systems and all other systems. Limit user access to WebDAV.
+
+Do not use WebDAV.
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp36.png)
 
 ### **Mitigation: Identifying Reverse Shell Upoloads** ####
 ---
 + ##### **Alarm** #####
-Create
+Create an alarm that triggers if any scripts or  suspicious extensions are uploaded. 
 + ##### **System Hardening** #####
-The network
+Maintain anti-virus and anti-malware software. Maintain monitoring and logging  systems to identify suspicous traffic or activity. What configuration can be set on the host to block file uploads? Do not allow files to be uploaded to systems directly connected to sensitive internal network. 
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp37.png)
