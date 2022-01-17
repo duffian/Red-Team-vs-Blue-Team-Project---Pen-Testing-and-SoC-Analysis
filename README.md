@@ -32,9 +32,11 @@ In this environment Blue Team is defending against Red Team attacks.
 #### Exploitation #### 
 ---
 Discover target IP
+
 `ifconfig`
 
 `netdiscover -Pr 192.168.1.0/16`
+
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/netdiscover.png)
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/netdiscover2.png)
@@ -46,7 +48,7 @@ Discover target IP
 
 #### Service and Version Scan ####
 
-'nmap -A --script-vuln -v 192.168.1.105`
+`nmap -A --script-vuln -v 192.168.1.105`
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/nmap-a.png)
 
