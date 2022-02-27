@@ -10,7 +10,6 @@ ___
 In this activity, Red Team acts as a malicious actor attempting to gain unauthorized access to a network. Blue Team monitors and analyses the activity. The ultimate objective is for Blue Team to identify vulnerabilities and to improve network security. 
 
 ## Network Topology
-
 In this environment Blue Team is defending against Red Team attacks.
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/3122a604b745c825d67c88767017092a2c29fa79/images/RvBNetworkTopology.png)
 
@@ -24,13 +23,12 @@ In this environment Blue Team is defending against Red Team attacks.
 |  192.168.1.105          | Capstone              | Linux        | Target Machine / Vulnerable Server |
 
 
----
 
 
 ## Red Team: Security Assessment
----
+
 #### Exploitation #### 
----
+
 #### Discover target IP ####
 
 `ifconfig`
@@ -78,7 +76,9 @@ Brute force the password for the hidden directory using the ‘hydra’ command 
 `hydra -l ashton -P /usr/share/wordlists/rockyou.txt -s 80 -f -vV 192.168.1.105 http-get “/company_folders/secret_folder/”`
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/hydra1.png)
+
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/hydra2.png)
+
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/secfolder1.png)
 
 
@@ -176,9 +176,6 @@ Download ‘flag.txt’ to Kali machine
 ## Vulnerabilities ##
 
 
----
-
-
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp7.png)
 
 #### **CWE-312: Cleartext Storage of Sensitive Information** ####
@@ -192,18 +189,10 @@ Download ‘flag.txt’ to Kali machine
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/3c235d16aa1dd6a13f92e7d80b1a30c06eab783b/images/pp10b.png)
 
 
-
----
-
-
 ## Blue Team: Log Analysis and Attack Characterization
----
-
-
----
 
 #### 1. ID Offensive Traffic ####
----
+
 `source.ip: 192.168.1.90` `destination.ip: 192.168.1.105`
 `user_agent.original:Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)`
 
@@ -234,7 +223,7 @@ Data indicating the sudden spike in traffic and data indicating successful malic
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1k.png)
 
 #### 2. Find the Request for the Hidden Directory ####
----
+
 `source.ip: 192.168.1.90` `destination.ip: 192.168.1.105`
 `query:GET/company_folders/secret_folder`
 
@@ -260,7 +249,7 @@ Creating an alert to notify administrators of when three or more password login 
 Create a timed lockout rule to prevent IPs or specific user credentials from being used for attempted logins after the failed password threshold is reached.
 
 #### 3. Identify the Brute Force Attack ####
----
+
 `source.ip: 192.168.1.90` `destination.ip: 192.168.1.105`
 `user_agent.original:Mozilla/4.0(Hydra)`
 
@@ -298,7 +287,7 @@ Establishing robust password practices will help limit the likelihood of success
 Password length, character requirements, and/or updated passwords every 1-3 months depending on security needs.
 
 #### 4. Find the WebDAV Connection ####
----
+
 `source.ip: 192.168.1.90` `destination.ip: 192.168.1.105`
 `query:GET/webdav/`
 
@@ -326,7 +315,7 @@ Create an alarm that triggers when non-approved IP addresses attempt to access W
 Monitor IPs and user credentials attempting to access WebDAV. Whitelist approved IP addresses. Reduce user access to WebDAV. Switch to HTTPS.
 
 #### 5.	Identify the Reverse Shell and Meterpreter Traffic. ####
----
+
 `source.ip: 192.168.1.90` `destination.ip: 192.168.1.105`
 `query:GET/webdav/shell.php`
 
@@ -344,12 +333,8 @@ Maintain up-to-date anti-virus and anti-malware software. Monitor open ports (su
 
 ## Hardening: Proposed Alarms and Mitigation Strategies
 
-
----
-
-
 ### **Mitigation: Blocking the Port Scan** ####
----
+
 + ##### **Alarm** #####
 Create an alert for port traffic with a threshold high enough to compensate for regular traffic. Trigger the alert if the threshold is reached, common port scanning tools, or aggressive port scanning is detected. 
 
@@ -359,10 +344,9 @@ Have a low threshold around 10 for port scanning and an upper threshold near 100
 The network can be configured so that susceptible ports open to external traffic are outside a firewall. Whitelist authorized IPs, block unauthorized IPs, and maintain up-to-date monitoring and security software. 
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp33.png)
----
 
 ### **Mitigation: Finding the Request for the Hidden Directory** ####
----
+
 + ##### **Alarm** #####
 Create a whitelist of IPs authorized to access the hidden directory. Trigger an alarm if whitelisted IPs fail 3 login attempts in quick succession. Trigger the alert if non-whitelisted IPs attempt to access the hidden directory.
 
@@ -372,7 +356,7 @@ Configure the host to timeout IP addresses the are not whitelisted and IPs that 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp34.png)
 
 ### **Mitigation: Preventing Brute Force Attacks** ####
----
+
 + ##### **Alarm** #####
 Establish a baseline for normal frequency of traffic over time. Trigger an alarm if the upper threshold is exceeded. Threshold should  be ten failed  logins. 
 
@@ -382,7 +366,7 @@ Lockout IP addresses the fail login attempts in rapid succession. Enforce best p
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp35.png)
 
 ### **Mitigation: Detecting the WebDAV Connection** ####
----
+
 + ##### **Alarm** #####
 Create alarm that triggers whenever any non-whitelisted IP or traffic from unknown sources attempts to communicate with WebDAV system. Threshold is one.
 + ##### **System Hardening** #####
@@ -393,7 +377,7 @@ Do not use WebDAV.
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ae79e10c5cbb97c36f8418b6d3eef06538f77ada/images/pp36.png)
 
 ### **Mitigation: Identifying Reverse Shell Upoloads** ####
----
+
 + ##### **Alarm** #####
 Create an alarm that triggers if any scripts or  suspicious extensions are uploaded. 
 + ##### **System Hardening** #####
