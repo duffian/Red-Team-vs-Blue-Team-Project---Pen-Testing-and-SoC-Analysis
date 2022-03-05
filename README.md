@@ -145,8 +145,11 @@ Setup listener
 `use multi/handler`
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/list1.png)
+
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/list2.png)
+
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/list3.png)
+
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/list4.png)
 
 Once ‘shell.php’ shell script is uploaded to target website users on target network that click the script will activate it and attacking Kali machine will connect
@@ -154,6 +157,7 @@ Once ‘shell.php’ shell script is uploaded to target website users on target 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/shellupload.png)
 
 Meterpreter session is now open
+
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/meterpretersession_open.png)
 
 Acquire interactive reverse ‘shell’
@@ -166,12 +170,15 @@ Acquire interactive reverse ‘shell’
 #### Exfiltration ####
 Find and capture flag
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/flg1.png)
+
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/flg2.png)
 
 Exit back to meterpreter session
+
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/exitbackmeterpreter.png)
 
 Download ‘flag.txt’ to Kali machine
+
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/5e7d95a2733bf76be2c4a7fad1476129a63cd39d/images/dwnlodflg.png)
 
 
@@ -196,7 +203,10 @@ Download ‘flag.txt’ to Kali machine
 
 #### 1. ID Offensive Traffic ####
 
-`source.ip: 192.168.1.90` `destination.ip: 192.168.1.105`
+`source.ip: 192.168.1.90`
+
+`destination.ip: 192.168.1.105`
+
 `user_agent.original:Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)`
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/1a.png)
@@ -227,12 +237,18 @@ Data indicating the sudden spike in traffic and data indicating successful malic
 
 #### 2. Find the Request for the Hidden Directory ####
 
-`source.ip: 192.168.1.90` `destination.ip: 192.168.1.105`
+`source.ip: 192.168.1.90` 
+
+`destination.ip: 192.168.1.105`
+
 `query:GET/company_folders/secret_folder`
 
-(https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2a.pnghttps://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2a.png)
+![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2a.pnghttps://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2a.png)
+
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2b.png)
+
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2c.png)
+
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/2d.png)
 
 31,064 requests were made from 192.168.1.90 to the secret directory at http://192.168.1.105/company_folders/secret_folders/ roughly between December 28, 13:33:30 and December 28, 15:14:00.
@@ -253,11 +269,16 @@ Create a timed lockout rule to prevent IPs or specific user credentials from bei
 
 #### 3. Identify the Brute Force Attack ####
 
-`source.ip: 192.168.1.90` `destination.ip: 192.168.1.105`
+`source.ip: 192.168.1.90`
+
+`destination.ip: 192.168.1.105`
+
 `user_agent.original:Mozilla/4.0(Hydra)`
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/3a.png)
+
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/3b.png)
+
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/235e488cc6b19d0e623e80614952038af940e521/images/3c.png)
 
 ##### **_Can you identify packets specifically from Hydra?_** #####
@@ -291,7 +312,10 @@ Password length, character requirements, and/or updated passwords every 1-3 mont
 
 #### 4. Find the WebDAV Connection ####
 
-`source.ip: 192.168.1.90` `destination.ip: 192.168.1.105`
+`source.ip: 192.168.1.90`
+
+`destination.ip: 192.168.1.105`
+
 `query:GET/webdav/`
 
 ![image](https://github.com/duffian/RedTeam_vs_BlueTeam/blob/ef13927b37a1ca83d4082f0a3d2b27cfca4bc321/images/4a.png)
@@ -319,7 +343,10 @@ Monitor IPs and user credentials attempting to access WebDAV. Whitelist approved
 
 #### 5.	Identify the Reverse Shell and Meterpreter Traffic. ####
 
-`source.ip: 192.168.1.90` `destination.ip: 192.168.1.105`
+`source.ip: 192.168.1.90` 
+
+`destination.ip: 192.168.1.105`
+
 `query:GET/webdav/shell.php`
 
 ##### **_Identify the traffic from the meterpreter session ‘url.path: /webdav/shell.php’_** #####
