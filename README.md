@@ -1,4 +1,4 @@
-# RedTeam_vs_BlueTeam
+# RedTeam vs BlueTeam - Penetration Testing and SIEM
 The objective in this project is to work as a Red Team pentester and Blue Team SOC analyst.
 
 The Red Team will attack a vulnerable VM in its environment and ultimately gain root access to the machine. The Blue Team will use Kibana to review logs and extract hard data and visualizations for a report. Then, we will interpret log data and suggest mitigation measures for each exploit.
