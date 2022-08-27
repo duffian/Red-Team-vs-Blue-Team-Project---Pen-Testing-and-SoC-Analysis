@@ -4,10 +4,10 @@ The objective in this project is to work as a Red Team pentester and Blue Team S
 The Red Team will attack a vulnerable VM in its environment and ultimately gain root access to the machine. The Blue Team will use Kibana to review logs and extract hard data and visualizations for a report. Then, we will interpret log data and suggest mitigation measures for each exploit.
 
 Skills and Tools
-> Penetration testing with Kali Linux
-> Log and incident analysis with Kibana
-> System hardening and configuration
-> Reporting, documentation, and communication
+> - Penetration testing with Kali Linux
+> - Log and incident analysis with Kibana
+> - System hardening and configuration
+> - Reporting, documentation, and communication
 
 # Security Assessment, Analysis, and Hardening Project
 This Red Team vs. Blue Team project is organized into the following sections:
